@@ -5,7 +5,7 @@ function validacao_cpf_cnpj($vars){
 	/* EDITAR A PARTIR DAQUI */
 	$customfield_cpf_cnpj = 75;
 	$mensagem_erro_invalido = "O CPF/CNPJ informado não é válido.";
-	$mensagem_erro_duplicado = 'Já existe uma conta cadastrada com esse CPF/CPNJ. Por favor <a href="login.php">faça login</a>.';
+	$mensagem_erro_duplicado = "Já existe uma conta cadastrada com esse CPF/CPNJ. Por favor <a href='login.php'>faça login</a>.";
 	/* NÃO EDITAR A PARTIR DAQUI */
 	$pdo = Capsule::connection()->getPdo();
 	$cpf_cnpj = preg_replace("/[^0-9]/", "", $vars["customfield"][$customfield_cpf_cnpj]);
